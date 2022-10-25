@@ -1,0 +1,14 @@
+.profile{
+    display: flex;
+    border: 1px solid red;
+}
+.profileSection{
+    display: flex;
+    flex-direction: column;
+}
+.twitter-username{
+    color: green;
+}
+.slack-username{
+    color: purple;
+}
