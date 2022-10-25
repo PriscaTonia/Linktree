@@ -1,25 +1,21 @@
-.btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #EAECF0;
-    border: 1px solid #EAECF0;
-    border-radius: 8px;
-    width: 100%;
-    padding: 24px 32px;
+.btn {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  width: 100%;
+  padding: 24px 32px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #101828;
 }
-.btn a{
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #101828;
-
-
-
+.btn#twitter__name {
+  font-weight: 500;
 }

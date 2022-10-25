@@ -1,14 +1,12 @@
-import {Profile, Link} from './Components'
-
+import { Profile, Link } from "./Components";
 
 function App() {
   return (
     <div className="App">
       <main>
-          <Profile/>
-          <Link />
+        <Profile />
+        <Link />
       </main>
-  
     </div>
   );
 }

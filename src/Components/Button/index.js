@@ -1,11 +1,11 @@
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
-const Button = ({text, address}) => {
-    return ( 
-        <div className={styles.btn}>
-            <a href={address} >{text}</a>
-        </div>
-     );
-}
- 
-export  {Button};
+const Button = ({ text, address, idName }) => {
+  return (
+    <a href={address} className={styles.btn} id={idName}>
+      {text}
+    </a>
+  );
+};
+
+export { Button };

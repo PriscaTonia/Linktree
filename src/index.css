@@ -1,18 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-.App{
-  background: #F4F5F7;
+.App {
+  background: #ffffff;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
-main{
+main {
   display: flex;
   flex-direction: column;
   width: 80%;
