@@ -1,11 +1,14 @@
-import {Profile} from './Components'
+import {Profile, Link} from './Components'
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <Profile/>
+      <main>
+          <Profile/>
+          <Link />
+      </main>
+  
     </div>
   );
 }
