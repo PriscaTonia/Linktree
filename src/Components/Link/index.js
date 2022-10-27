@@ -22,7 +22,7 @@ const Link = () => {
       />
       <Button
         text="Python Books"
-        address="https://books.zuri.team/python-for-beginners?ref_id=Prisca_Onwudebelu"
+        address="https://books.zuri.team/python-for-beginners?ref_id=natural_tech_babe"
         id="book__python"
       />
       <Button
