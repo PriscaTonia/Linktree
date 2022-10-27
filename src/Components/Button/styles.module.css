@@ -16,6 +16,9 @@
   line-height: 28px;
   color: #101828;
 }
+.btn:hover{
+  background: #D0D5DD;;
+}
 .btn#twitter__name {
   font-weight: 500;
 }
