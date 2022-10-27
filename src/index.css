@@ -21,11 +21,11 @@ main {
   width: 80%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 600px){
-  .App{
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .App {
     padding-top: 64px;
   }
-  main{
+  main {
     width: 90%;
   }
 }

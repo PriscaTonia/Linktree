@@ -1,4 +1,4 @@
-import { Profile, Link, Social, Footer} from "./Components";
+import { Profile, Link, Social, Footer } from "./Components";
 
 function App() {
   return (

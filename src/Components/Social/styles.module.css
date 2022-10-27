@@ -1,15 +1,15 @@
-.social{
-    margin-top: 24px;
-    padding: 24px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social {
+  margin-top: 24px;
+  padding: 24px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slackicon{
-    padding-right: 10px;
+.slackicon {
+  padding-right: 10px;
 }
-.giticon{
-    padding-left: 10px;
+.giticon {
+  padding-left: 10px;
 }
 
 /* @media screen and (min-width: 375px) and (max-width: 600px){

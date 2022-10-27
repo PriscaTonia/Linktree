@@ -39,11 +39,11 @@
   display: none;
 }
 
-@media screen and (min-width: 375px) and (max-width: 600px){
-  .shareBtnDesktop{
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .shareBtnDesktop {
     display: none;
   }
-  .shareBtnMobile{
+  .shareBtnMobile {
     display: flex;
     position: absolute;
     right: 16px;
