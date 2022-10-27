@@ -17,7 +17,7 @@
   border-radius: 50px;
   background: url("../../images/myProfie.PNG");
 }
-.shareBtn {
+.shareBtnDesktop {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -37,4 +37,15 @@
 }
 .slack {
   display: none;
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px){
+  .shareBtnDesktop{
+    display: none;
+  }
+  .shareBtnMobile{
+    display: flex;
+    position: absolute;
+    right: 16px;
+  }
 }

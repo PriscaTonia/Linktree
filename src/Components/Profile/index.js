@@ -6,9 +6,9 @@ const Profile = () => {
            <div className={styles.profileSection}>
                 <div id="profile__img" className={styles.profileImage} >  </div>
                 <p className={styles.twitter} id="twitter">EbubePrisca</p>
-                <p className={styles.slack} id="slack">Prisca Onwudebelu</p>
+                <p className={styles.slack} id="slack">Onwudebelu Prisca Ebubechukwu</p>
            </div>
-           <div className={styles.shareBtn}>
+           <div>
                 {/* Destop share button */}
                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.shareBtnDesktop}>
                 <rect x="1" y="1" width="40" height="40" rx="20" fill="white"/>

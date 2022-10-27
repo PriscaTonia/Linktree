@@ -1,4 +1,4 @@
-import { Profile, Link } from "./Components";
+import { Profile, Link, Social, Footer} from "./Components";
 
 function App() {
   return (
@@ -6,7 +6,9 @@ function App() {
       <main>
         <Profile />
         <Link />
+        <Social />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
 
-const Button = ({ text, address, idName }) => {
+const Button = ({ text = "", address = "", id = "", titleText = " " }) => {
   return (
-    <a href={address} className={styles.btn} id={idName}>
+    <a href={address} className={styles.btn} id={id} title={titleText}>
       {text}
     </a>
   );
