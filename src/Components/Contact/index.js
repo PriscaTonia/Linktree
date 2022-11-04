@@ -116,7 +116,7 @@ const Contact = () => {
 
           {/* Submit Button */}
           <div className={styles.submitbtn}>
-            <button disabled={value ? false : true} id="btn__submit">
+            <button disabled={value ? false : true} type="submit" id="btn__submit">
               Send Message
             </button>
           </div>
