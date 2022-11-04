@@ -17,6 +17,7 @@ const Contact = () => {
                 type="text"
                 name="firstname"
                 id="first_name"
+                required
                 placeholder="Enter your first name"
               />
             </div>
@@ -26,6 +27,7 @@ const Contact = () => {
                 type="text"
                 name="lastname"
                 id="last_name"
+                required
                 placeholder="Enter your last name"
               />
             </div>
@@ -38,6 +40,7 @@ const Contact = () => {
               type="email"
               name="email"
               id="email"
+              required
               placeholder="yourname@email.com"
             />
           </div>
@@ -49,12 +52,13 @@ const Contact = () => {
               cols="30"
               rows="10"
               id="message"
+              required
               placeholder="Send me a message and I'll reply you as soon as possible... "
             ></textarea>
           </div>
           {/* Checkbox */}
           <div className={styles.checkbox}>
-            <input type="checkbox" name="check" />
+            <input type="checkbox" name="check" required />
             <label htmlFor="check">
               You agree to providing your data to Onwudebelu Prisca Ebubechukwu
               who may contact you.
