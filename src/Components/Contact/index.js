@@ -1,6 +1,9 @@
 import styles from "./styles.module.css";
 
 const Contact = () => {
+
+    let myName = "Onwudebelu Prisca Ebubechukwu ";
+  
   return (
     <div className={styles.contact}>
       <div className={styles.mainContent}>
@@ -17,7 +20,6 @@ const Contact = () => {
                 type="text"
                 name="firstname"
                 id="first_name"
-                required
                 placeholder="Enter your first name"
               />
             </div>
@@ -27,7 +29,6 @@ const Contact = () => {
                 type="text"
                 name="lastname"
                 id="last_name"
-                required
                 placeholder="Enter your last name"
               />
             </div>
@@ -40,7 +41,6 @@ const Contact = () => {
               type="email"
               name="email"
               id="email"
-              required
               placeholder="yourname@email.com"
             />
           </div>
@@ -60,13 +60,13 @@ const Contact = () => {
           <div className={styles.checkbox}>
             <input type="checkbox" name="check" required />
             <label htmlFor="check">
-              You agree to providing your data to Onwudebelu Prisca Ebubechukwu
+              You agree to providing your data to {myName} 
               who may contact you.
             </label>
           </div>
           {/* Submit Button */}
           <div className={styles.submitbtn}>
-            <button id="btn__submit">Send Message</button>
+            <button  id="btn__submit" >Send Message</button>
           </div>
         </form>
       </div>

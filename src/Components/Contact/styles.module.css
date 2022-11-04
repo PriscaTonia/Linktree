@@ -104,6 +104,8 @@ textarea::placeholder {
   display: flex;
   gap: 12px;
   align-items: center;
+  background-color: #ffffff;
+  color: #1570ef;
 }
 .checkbox input {
   box-sizing: border-box;
@@ -114,6 +116,8 @@ textarea::placeholder {
   border: 1px solid #d0d5dd;
   border-radius: 6px;
   cursor: pointer;
+  color: #1570ef;
+  
 }
 .checkbox label {
   padding-bottom: 0px;
@@ -143,7 +147,10 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 24px;
 }
-
+.submitbtn button:disabled{
+    background: #B2DDFF;
+    border: 1px solid #B2DDFF;
+}
 @media screen and (min-width: 375px) and (max-width: 600px) {
   .mainContent {
     width: 90%;
