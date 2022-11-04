@@ -1,23 +1,27 @@
 import { useState } from "react";
-import {useForm} from 'react-hook-form'
+import { useForm } from "react-hook-form";
 import styles from "./styles.module.css";
 
 const Contact = () => {
-    
-    const {register, handleSubmit, formState:{errors}} = useForm();
-    const [name, setName] = useState("Onwudebelu Prisca Ebubechukwu ");
-    const [value, setValue] = useState(false)
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const [name, setName] = useState("Onwudebelu Prisca Ebubechukwu ");
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [value, setValue] = useState(false);
 
-    const handleChange = (e) =>{
-        console.log(e.target.checked)
-        console.log("hiii")
-        if(e.target.checked === true){
-            setValue(true)
-        } else{
-            setValue(false);
-        }
+  const handleChange = (e) => {
+    console.log(e.target.checked);
+    console.log("hiii");
+    if (e.target.checked === true) {
+      setValue(true);
+    } else {
+      setValue(false);
     }
-
+  };
 
   return (
     <div className={styles.contact}>
@@ -26,18 +30,27 @@ const Contact = () => {
           <h1>Contact Me</h1>
           <p>Hi there, Contact me to ask me about anything you have in mind.</p>
         </header>
-        <form onSubmit={
-            handleSubmit(data => {
-                console.log(data)
-            })
-        }>
+
+        <form
+          onSubmit={handleSubmit((data) => {
+            // console.log(data)
+            setFormSubmitted(true);
+            setTimeout(() => {
+              reset();
+              setFormSubmitted(false);
+              setValue(false);
+            }, 5000);
+          })}
+        >
           {/* Name */}
           <div className={styles.nameGroup}>
-            <div className={styles.firstname}>   
+            <div className={styles.firstname}>
               <label htmlFor="firstname">First Name</label>
               <input
                 type="text"
-                {...register("firstname", { required: "This is a required field" })}
+                {...register("firstname", {
+                  required: "This is a required field",
+                })}
                 name="firstname"
                 id="first_name"
                 placeholder="Enter your first name"
@@ -48,7 +61,9 @@ const Contact = () => {
               <label htmlFor="lastname">Last Name</label>
               <input
                 type="text"
-                {...register("lastname", { required: "This is a required field" })}
+                {...register("lastname", {
+                  required: "This is a required field",
+                })}
                 name="lastname"
                 id="last_name"
                 placeholder="Enter your last name"
@@ -77,24 +92,39 @@ const Contact = () => {
               rows="10"
               id="message"
               {...register("message", { required: "Please Enter a Message" })}
-              
               placeholder="Send me a message and I'll reply you as soon as possible... "
             ></textarea>
             <p className={styles.errorMessage}>{errors.message?.message}</p>
           </div>
           {/* Checkbox */}
           <div className={styles.checkbox}>
-            <input type="checkbox" name="check" checked = {value} {...register("check", { required: "This is required" })}  onChange={handleChange}/>
+            <input
+              type="checkbox"
+              name="check"
+              checked={value}
+              {...register("check", { required: "This is required" })}
+              onChange={handleChange}
+            />
             <label htmlFor="check">
-              You agree to providing your data to {name} 
+              You agree to providing your data to {name}
               who may contact you.
-            </label> <br />
+            </label>{" "}
+            <br />
           </div>
-         
+
           {/* Submit Button */}
           <div className={styles.submitbtn}>
-            <button disabled = {value ? false : true} id ="btn__submit" >Send Message</button>
+            <button disabled={value ? false : true} id="btn__submit">
+              Send Message
+            </button>
           </div>
+
+          <p className={styles.successMessage}>
+            {" "}
+            {formSubmitted
+              ? "Your Response has been submitted successfully"
+              : ""}{" "}
+          </p>
         </form>
       </div>
     </div>
