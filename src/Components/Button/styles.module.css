@@ -9,6 +9,8 @@
   border-radius: 8px;
   width: 100%;
   padding: 24px 32px;
+  min-height: 76px;
+  max-height: 76px;
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
@@ -29,5 +31,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+    min-height: 76px;
+    max-height: 76px;
   }
 }
