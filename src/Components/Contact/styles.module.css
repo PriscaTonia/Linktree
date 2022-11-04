@@ -9,7 +9,10 @@
 }
 .mainContent{
     width: 50%;
-    border: 1px solid red;
+}
+/* Header Styles */
+header{
+    padding-bottom: 48px;
 }
 h1{
     font-weight: 600;
@@ -17,4 +20,101 @@ h1{
     line-height: 44px;
     letter-spacing: -0.02em;
     color: #101828;
+    padding-bottom: 20px;
+}
+p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #475467;
+
+}
+/* Form Styles */
+
+/* General */
+.nameGroup, .email, .message, .checkbox, .submitbtn{
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 24px;
+}
+label{
+    padding-bottom: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+color: #344054;
+}
+
+/* name styles */
+.nameGroup{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.firstname{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+}
+.lastname{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+.nameGroup input, .email input{
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+
+}
+
+/* email, message, checkbox */
+.email, .message{
+    display: flex;
+    flex-direction: column;
+}
+.message textarea{
+    padding: 12px 14px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    max-height: 132px;
+}
+.checkbox{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.checkbox input{
+    box-sizing: border-box;
+width: 20px;
+height: 20px;
+background: #FFFFFF;
+border: 1px solid #D0D5DD;
+border-radius: 6px;
+}
+.checkbox label{
+    padding-bottom: 0px;
+}
+
+/* submit button styles */
+.submitbtn{
+    display: flex;
+}
+.submitbtn input{
+    padding: 12px 20px;
+    gap: 8px;
+    width: 100%;
+    min-height: 48px;
+    background: #1570EF;
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
 }
