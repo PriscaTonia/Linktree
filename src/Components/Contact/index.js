@@ -14,8 +14,6 @@ const Contact = () => {
   const [value, setValue] = useState(false);
 
   const handleChange = (e) => {
-    console.log(e.target.checked);
-    console.log("hiii");
     if (e.target.checked === true) {
       setValue(true);
     } else {
