@@ -100,6 +100,13 @@ textarea::placeholder {
   border-radius: 8px;
   max-height: 132px;
 }
+.message textarea:focus{
+    outline: none;
+    background: #FFFFFF;
+border: 1px solid #F89687;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+border-radius: 8px;
+}
 .checkbox {
   display: flex;
   gap: 12px;
@@ -125,7 +132,12 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 24px;
 }
-
+.checkbox input:focus{
+    background: #FFFFFF;
+border: 1px solid #84CAFF;
+box-shadow: 0px 0px 0px 4px #D1E9FF;
+border-radius: 6px;
+}
 /* submit button styles */
 .submitbtn {
   display: flex;
@@ -150,6 +162,14 @@ textarea::placeholder {
 .submitbtn button:disabled{
     background: #B2DDFF;
     border: 1px solid #B2DDFF;
+}
+.errorMessage{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F83F23;
 }
 @media screen and (min-width: 375px) and (max-width: 600px) {
   .mainContent {
