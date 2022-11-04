@@ -3,12 +3,14 @@ import { useForm } from "react-hook-form";
 import styles from "./styles.module.css";
 
 const Contact = () => {
+    // Setting React Hook form
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
   } = useForm();
+//   Settng State
   const [name, setName] = useState("Onwudebelu Prisca Ebubechukwu ");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [value, setValue] = useState(false);
@@ -48,7 +50,7 @@ const Contact = () => {
                 type="text"
                 {...register("firstname", {
                   required: "This is a required field",
-                })}
+                })} //Error Message
                 name="firstname"
                 id="first_name"
                 placeholder="Enter your first name"
@@ -61,7 +63,7 @@ const Contact = () => {
                 type="text"
                 {...register("lastname", {
                   required: "This is a required field",
-                })}
+                })} //Error Mesage
                 name="lastname"
                 id="last_name"
                 placeholder="Enter your last name"
@@ -81,6 +83,7 @@ const Contact = () => {
               placeholder="yourname@email.com"
             />
           </div>
+
           {/* Message */}
           <div className={styles.message}>
             <label htmlFor="message">Message</label>
@@ -89,24 +92,25 @@ const Contact = () => {
               cols="30"
               rows="10"
               id="message"
-              {...register("message", { required: "Please Enter a Message" })}
+              {...register("message", { required: "Please Enter a Message" })} //Error Mesage
               placeholder="Send me a message and I'll reply you as soon as possible... "
             ></textarea>
             <p className={styles.errorMessage}>{errors.message?.message}</p>
           </div>
+
           {/* Checkbox */}
           <div className={styles.checkbox}>
             <input
               type="checkbox"
               name="check"
               checked={value}
-              {...register("check", { required: "This is required" })}
+              {...register("check", { required: "This is required" })} //Error Mesage
               onChange={handleChange}
             />
             <label htmlFor="check">
               You agree to providing your data to {name}
               who may contact you.
-            </label>{" "}
+            </label>
             <br />
           </div>
 
@@ -117,11 +121,11 @@ const Contact = () => {
             </button>
           </div>
 
+                {/* Success Message */}
           <p className={styles.successMessage}>
-            {" "}
             {formSubmitted
               ? "Your Response has been submitted successfully"
-              : ""}{" "}
+              : ""}
           </p>
         </form>
       </div>
