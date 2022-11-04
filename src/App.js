@@ -1,15 +1,27 @@
-import { Profile, Link, Social, Footer } from "./Components";
+import { Profile, Link, Social, Footer, Contact } from "./Components";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <main>
-        <Profile />
-        <Link />
-        <Social />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+        <div className="App">
+       
+        {/* <Switch>
+          <Route exact path="/">
+            <main>
+            <Profile />
+            <Link />
+            <Social />
+            </main>
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+        </Switch> */}
+        <Contact/>
+        <Footer />
+        </div>
+    </Router>
   );
 }
 

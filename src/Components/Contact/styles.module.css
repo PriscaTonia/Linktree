@@ -1,0 +1,20 @@
+.contact{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+}
+.mainContent{
+    width: 50%;
+    border: 1px solid red;
+}
+h1{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
+}

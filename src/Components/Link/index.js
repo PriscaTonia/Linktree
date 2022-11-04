@@ -35,6 +35,10 @@ const Link = () => {
         address="https://books.zuri.team/design-rules"
         id="book__design"
       />
+      <Button 
+        text="Contact Me" 
+        address="/contact" 
+        id="contact" />
     </div>
   );
 };
